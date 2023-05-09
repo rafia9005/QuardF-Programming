@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+:root{
+  --bg-color: #19A7CE; /* default color #1D267D */
+  --text-color: #fff;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--bg-color);
+  padding: 10px 0;
+  position: fixed;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+nav .logo h1{
+  color: var(--text-color);
+}
+nav ul{
+  display: flex;
+  gap: 15px;
+}
+nav ul li a{
+  color: var(--text-color);
+}
+#nav-btn{
+  display: none;
+}
+.hero{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(./assets/image/background.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.hero .box h1{
+  color: var(--text-color);
+}
+.hero .box p{
+  color: var(--text-color);
+  font-weight: 300;
+}
+.hero .box .button{
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.hero .box .button button{
+  border: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  box-shadow: 0 0 5px var(--bg-color);
+}

@@ -1,0 +1,49 @@
+@media screen and (max-width: 480px){
+    nav{
+      justify-content: space-between;
+      padding: 10px 20px;
+      margin-top: 0;
+      margin-left: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+    #nav-btn{
+      display: block;
+      font-size: 25px;
+      color: var(--text-color);
+    }
+    #nav-box{
+      display: block;
+      transition: all .5s ease;
+      position: absolute;
+      background: var(--bg-color);
+      top: 100%;
+      left: 61%;
+      padding: 30px 50px;
+      border-radius: 0 0 0 50px;
+      transform: translateX(-260%);
+    }
+    #nav-box.active{
+      display: block;
+      transition: all .5s ease;
+      transform: translateX(0);
+    }
+    .hero{
+      justify-content: center;
+      text-align: center;
+    }
+    .hero .box h1{
+      font-size: 30px;
+      width: 90%;
+      margin-left: 5%;
+    }
+    .hero .box p{
+      font-size: 15px;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 20px;
+    }
+    .hero .box .button{
+        justify-content: center;
+    }
+  }
